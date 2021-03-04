@@ -1,0 +1,335 @@
+body {
+    background-color: #FDF2EC; 
+    height:100%;
+    margin:0;
+    color: #7C5850; 
+}
+
+/* Style of the navbar */
+nav {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 500; 
+    background-color: #CFDBD5; 
+    position: fixed; 
+    top:0; 
+    left:0;
+    width: 100%; 
+    display:flex; 
+    flex-direction: row; 
+    align-items:center;
+    justify-content: space-between;
+    padding: 0px 25px;
+    box-shadow: 1px 17px 20px -10px rgba(0,0,0,0.57);
+    
+    z-index: 99; 
+}
+
+nav > h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+#MainMenuTabs, #NavSocialMedia{
+    display:flex; 
+    justify-content:space-between;
+    list-style-type: none;
+    margin: 0px 25px;
+}
+
+ul#MainMenuTabs , ul#NavSocialMedia{
+    padding-left: 0px;
+}
+
+#MainMenuTabs li, #NavSocialMedia li{
+    padding: 8px 15px;
+}
+
+#MainMenuTabs li {
+    width: 110px;
+    text-align: center; 
+}
+
+#MainMenuTabs a, #NavSocialMedia a{
+    text-decoration: none;
+    color: #7C5850;  
+}
+
+#MainMenuTabs a:hover, #NavSocialMedia a:hover {
+    text-shadow: 1px 1px 2px #7C5850;
+    color: #FDF2EC; 
+}
+
+#NavSocialMedia i {
+    font-size: 1.2em;
+} 
+
+/* Style of the hero image */
+.heroImage {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/tabitha-turner-xXLZDf8RAX4-unsplash.jpg");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.heroContents {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FDF2EC;
+}
+
+.heroContents h2 {
+    font-size: 4em;
+    font-family:'roboto', sans-serif;
+}
+/*end of the hero section*/
+
+/* Titles h1 , h2 , h3 , h4  */
+h1 , h2 , h3 , h4 {
+    font-family:'Montserrat', sans-serif; 
+    letter-spacing: 0.07em;
+    text-transform: uppercase; 
+}
+/*end of the titles styles*/
+
+/* main styles of all sections */
+section {
+    color: #7C5850; 
+    height: 660px;
+    padding: 0px 25px;   
+    display:flex; 
+    flex-direction:column; 
+    justify-content: flex-start;
+    align-items: center;
+    scroll-margin-top: 5.5em;
+}
+
+section h2 {
+    text-align: center; 
+    padding: 40px 0px; 
+}
+
+.col {
+    display:flex; 
+    flex-direction: column;
+    justify-content:center; 
+}
+/*end of main styles sections */
+
+/*The value section style */
+#Values > div {
+    display: flex; 
+    justify-content: space-between;
+}
+
+#Values article {
+    padding: 40px 70px 30px 70px;
+    margin: 0px 20px; 
+    width: 30%; 
+    text-align: justify;
+    line-height: 1.5em; 
+    font-family: 'Roboto', sans-serif; 
+}
+
+#Values article:hover {
+    box-shadow: -2px 3px 19px 0px rgba(0,0,0,0.50);
+    -webkit-box-shadow: -2px 3px 19px 0px rgba(0,0,0,0.50);
+    -moz-box-shadow: -2px 3px 19px 0px rgba(0,0,0,0.50);
+}
+
+#Values i {
+    font-size: 2.5em; 
+    color: #CFB9B4; 
+}
+
+#Values h3 {
+    color: #CFB9B4; 
+    margin-top: 35px; 
+}
+
+/* FandB section */
+#FandB {
+    min-height: 800px; 
+}
+
+#FandB > div {
+    display: flex; 
+    justify-content: space-between;
+    flex-wrap:wrap; 
+    margin-bottom: 60px;
+}
+
+#FandB img {
+    width: 19.75%; 
+    height: 280px; 
+    object-fit: cover;
+    margin-bottom: 5px; 
+}
+
+/* Parallax div */
+.ParallaxDiv {
+    width:100%; 
+    height: 450px; 
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("img/joseph-gonzalez-zcUgjyqEwe8-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.ParallaxDiv div {
+    border: solid 4px #FDF2EC;
+    text-align:center;
+    padding: 8px 25px; 
+    margin: 0px 25px; 
+}
+
+/* Event section */
+#Events {
+    font-family:'Roboto', sans-serif; 
+}
+
+#EventContainer {
+    width:100%; 
+    display: flex; 
+}
+
+#EventContainer > .col {
+    width: 33.33%; 
+}
+
+#EventContainer img {
+    height: 420px; 
+    width:100%; 
+    object-fit:cover;
+}
+
+.EventCard {
+    display: flex; 
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content:center; 
+    background-color: #CFDBD5;
+    padding: 0px 25px 18px;
+    height: 192px; 
+}
+
+.EventCard a {
+    background-color: #FDF2EC; 
+    color: #7C5850; 
+    padding: 8px 15px;
+    font-weight: 500; 
+    text-transform: uppercase; 
+}
+
+.EventCard:hover {
+    background-color: #CFB9B4; 
+}
+
+/* Find Us Section */
+#FindUs .container {
+    display:flex; 
+    justify-content: space-between;
+    font-family: 'Roboto', sans-serif; 
+}
+
+#FindUs .col {
+    width: 48%;
+    align-items: center;
+    text-align: center;
+}
+
+.col img {
+    width:100%; 
+    height: 450px; 
+    object-fit:cover; 
+}
+
+.col i {
+    font-size: 1.5em;
+    padding: 8px 0px; 
+}
+
+#FindUs article > a {
+    color: #7C5850;
+    text-decoration: none;  
+}
+
+/* Top button style */
+#TopBtnSection { 
+    width: 100%; 
+    display:flex; 
+    align-items: center;
+    justify-content: center; 
+}
+
+button {
+    width: 150px; 
+    height: 55px; 
+    margin: 20px 0px; 
+    text-align: center; 
+    font-family: 'Roboto', sans-serif; 
+    text-transform: uppercase;
+    color: #FDF2EC; 
+    background-color: #7C5850; 
+    font-weight: 500; 
+    border: none; 
+}
+
+button i {
+    margin-right: 12px; 
+}
+
+button:hover {
+    box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.64);
+    -webkit-box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.64);
+    -moz-box-shadow: 1px 4px 15px 0px rgba(0,0,0,0.64);
+}
+
+/* style of the footer */
+footer {
+    background-color: #7C5850;
+    color: #FDF2EC; 
+    padding: 8px 25px;
+    font-family:'Montserrat', sans-serif;
+}
+
+footer h4 {
+    text-transform:uppercase; 
+    letter-spacing: 0.04em;
+}
+
+ul#SecondaryMenuTabs {
+    padding-left:0px;
+    text-transform:uppercase; 
+}
+
+#SecondaryMenuTabs li , a {
+    list-style-type: none;
+    text-decoration:none;
+    color: #FDF2EC;
+    padding: 0px 0px 10px 0px; 
+}
+
+#SecondaryMenuTabs a:hover {
+    color: #CFDBD5; 
+    padding-left: 25px; 
+}
+
+#Copyrights {
+    font-size: 0.8em;
+    width:100%; 
+    text-align:center; 
+    font-family: 'Roboto' ,  sans-serif;
+}
